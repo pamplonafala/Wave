@@ -2,13 +2,13 @@
 Creates a non-visible wavey matrix
 
 ### How to use
-To watch the wave work uncomment these lines:
+To edit wave configurations go to line `146.`
+To watch the wave work, uncomment these lines:
 ```js
 162. wave.circle();
 165. wave.web();
 168. wave.vertex(2);
 ```
-(To edit wave configurations go to line `146`)
 
 To see an especific place within the matrix use:
 ```js
