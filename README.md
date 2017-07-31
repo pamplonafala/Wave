@@ -17,8 +17,8 @@ wave.xy(<x>, <y>, true);
 
 To apply wave movement in objects create new obj variables:
 ```js
-obj.xWave = wave.xy(obj.x, obj.y, true).x;
-obj.yWave = wave.xy(obj.x, obj.y, true).y;
+obj.xWave = wave.xy(obj.x, obj.y).x;
+obj.yWave = wave.xy(obj.x, obj.y).y;
 ```
 
 ### Code
