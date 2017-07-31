@@ -46,7 +46,7 @@ Wave.prototype.xy = function(x, y, show) {
     };
 };
 Wave.prototype.circle = function() {
-    noFill();stroke(0, 0, 0, 25);
+    noFill();
     for (var i = 0; i < this.w; i++) {
         for (var j = 0; j < this.h; j++) {
             ellipse(
@@ -141,14 +141,6 @@ Wave.prototype.rotation = function() {
     }
 };
 Wave.prototype.draw = function() {
-    this.circle();
-    
-    stroke(200);
-    this.web();
-    
-    stroke(255, 0, 0);
-    this.vertex(2);
-	
     this.rotation();
 };
 var wave = new Wave({
@@ -165,5 +157,23 @@ var wave = new Wave({
 draw = function() {
     background(255);
     wave.draw();
-    wave.xy(5, 5, true);
+    
+    stroke(0, 0, 0, 25);
+    //wave.circle();
+    
+    stroke(200);
+    //wave.web();
+    
+    stroke(255, 0, 0);
+    //wave.vertex(2);
+
+    wave.xy(4, 4, true);
+    wave.xy(6, 6, true);
+    wave.xy(8, 8, true);
+    wave.xy(10, 10, true);
+    wave.xy(12, 12, true);
+    wave.xy(14, 14, true);
+    wave.xy(16, 16, true);
+    wave.xy(18, 18, true);
+    wave.xy(20, 20, true);
 };
